@@ -1,5 +1,13 @@
 # @mastra/dynamodb
 
+## 1.0.0-beta.10
+
+### Patch Changes
+
+- Fix eval scores not being saved when using DynamoDB storage ([#11737](https://github.com/mastra-ai/mastra/pull/11737))
+  Scores from built-in scorers (like hallucination-scorer) were silently failing to save to DynamoDB. Scores now persist correctly with all their metadata.
+  Fixes #11693. Add metadata field coverage to score storage tests
+
 ## 1.0.0-beta.9
 
 ### Patch Changes
